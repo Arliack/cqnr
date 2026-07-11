@@ -10,10 +10,10 @@ Application web mobile pour créer un personnage et générer la feuille de pers
 - Génération de la feuille officielle remplie, aperçu puis téléchargement PDF
 
 ## Utilisation
-Le fichier `index.html` est autonome (aucune dépendance locale) : ouvrez-le dans un navigateur, ou hébergez-le tel quel.
+Ouvrez `index.html` dans un navigateur. **Important : le dossier `assets/` doit être à côté de `index.html`** (la feuille vierge y est chargée pour générer le PDF).
 
 ## Publier sur GitHub Pages
-1. Créez un nouveau dépôt sur github.com (ex. `cqnr-generateur`)
-2. Ajoutez `index.html` (et ce README) à la racine, puis commit + push
-3. Dans le dépôt : Settings → Pages → Source : branche `main`, dossier `/ (root)`
-4. Votre app sera en ligne sur `https://<votre-nom>.github.io/cqnr-generateur/`
+1. Dans votre dépôt (ex. `Arliack/cqnr`) : Add file → Upload files
+2. Ajoutez `index.html`, `README.md` **et le dossier `assets/`** (glissez le dossier entier), puis Commit
+3. Settings → Pages → Source : branche `main`, dossier `/ (root)`
+4. Votre app sera en ligne sur `https://arliack.github.io/cqnr/`
