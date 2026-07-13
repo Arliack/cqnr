@@ -1,19 +1,15 @@
-# Générateur de personnage — Ce qu'il nous reste (CQNR)
+# Générateur de personnage CQNR
 
-Application web mobile pour créer un personnage et générer la feuille de personnage CQNR remplie en PDF (A4 paysage).
+Générateur de feuille de personnage (mobile) pour *Ce qu'il nous reste*.
 
-## Fonctionnalités
-- Formulaire simple : joueur·se, campagne, nom, concept, éclats ×3, marque, signes ×3
-- Portrait avec recadrage (déplacement au doigt + zoom)
-- Sauvegarde automatique sur l'appareil (localStorage)
-- Interface FR / EN
-- Génération de la feuille officielle remplie, aperçu puis téléchargement PDF
+## Mise en ligne sur GitHub Pages
 
-## Utilisation
-Ouvrez `index.html` dans un navigateur. **Important : le dossier `assets/` doit être à côté de `index.html`** (la feuille vierge y est chargée pour générer le PDF).
+1. Déposez le contenu de ce dossier à la racine du dépôt (`index.html`, `support.js`, `assets/`).
+2. Dans les réglages du dépôt : **Settings → Pages → Deploy from a branch → main / root**.
+3. L'application sera disponible à `https://<votre-nom>.github.io/<nom-du-depot>/`.
 
-## Publier sur GitHub Pages
-1. Dans votre dépôt (ex. `Arliack/cqnr`) : Add file → Upload files
-2. Ajoutez `index.html`, `README.md` **et le dossier `assets/`** (glissez le dossier entier), puis Commit
-3. Settings → Pages → Source : branche `main`, dossier `/ (root)`
-4. Votre app sera en ligne sur `https://arliack.github.io/cqnr/`
+## Fichiers
+
+- `index.html` — l'application (formulaire, recadrage du portrait, génération JPEG/PDF).
+- `support.js` — le moteur d'exécution requis par la page.
+- `assets/feuille-cqnr.png` — la feuille de personnage vierge.
