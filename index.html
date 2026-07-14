@@ -497,10 +497,15 @@ class Component extends DCLogic {
     return cv;
   }
 
-  componentDidUpdate(prevProps) {
-    if (prevProps !== this.props && this.state.previewUrl && !this.state.generating) {
-      clearTimeout(this._tweakT);
-      this._tweakT = setTimeout(() => this.generate(), 250);
+  componentDidUpdate() {
+    const sig = JSON.stringify([this.props.cercle1X, this.props.cercle1Y, this.props.cercle2X, this.props.cercle2Y, this.props.cercle3X, this.props.cercle3Y, this.props.cercleRayon]);
+    if (this._tweakSig === undefined) { this._tweakSig = sig; return; }
+    if (sig !== this._tweakSig) {
+      this._tweakSig = sig;
+      if (this.state.showPreview && !this.state.generating) {
+        clearTimeout(this._tweakT);
+        this._tweakT = setTimeout(() => { this._fromTweak = true; this.generate(); }, 250);
+      }
     }
   }
 
@@ -510,7 +515,8 @@ class Component extends DCLogic {
     try {
       const cv = await this.buildCanvas();
       const url = cv.toDataURL('image/jpeg', 0.88);
-      this.setState({ previewUrl: url, showPreview: true, generating: false });
+      this.setState(s => ({ previewUrl: url, showPreview: s.showPreview || !this._fromTweak, generating: false }));
+      this._fromTweak = false;
     } catch (e) {
       console.error(e);
       this.setState({ generating: false });
