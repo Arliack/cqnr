@@ -183,27 +183,13 @@
 </sc-if>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{
-  &quot;txt_joueurX&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0,&quot;min&quot;:-400,&quot;max&quot;:400,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Joueur&quot;},
-  &quot;txt_joueurY&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:12,&quot;min&quot;:-200,&quot;max&quot;:200,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Joueur&quot;},
-  &quot;txt_campagneX&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0,&quot;min&quot;:-400,&quot;max&quot;:400,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Campagne&quot;},
-  &quot;txt_campagneY&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:4,&quot;min&quot;:-200,&quot;max&quot;:200,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Campagne&quot;},
-  &quot;txt_nomX&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0,&quot;min&quot;:-400,&quot;max&quot;:400,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Nom&quot;},
-  &quot;txt_nomY&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:14,&quot;min&quot;:-200,&quot;max&quot;:200,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Nom&quot;},
-  &quot;txt_conceptX&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0,&quot;min&quot;:-400,&quot;max&quot;:400,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Concept&quot;},
-  &quot;txt_conceptY&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0,&quot;min&quot;:-200,&quot;max&quot;:200,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Concept&quot;},
-  &quot;txt_eclatsX&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0,&quot;min&quot;:-800,&quot;max&quot;:800,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Éclats (les 3)&quot;},
-  &quot;txt_eclatsY&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:16,&quot;min&quot;:-200,&quot;max&quot;:200,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Éclats (les 3)&quot;},
-  &quot;txt_marqueX&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0,&quot;min&quot;:-800,&quot;max&quot;:800,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Marque&quot;},
-  &quot;txt_marqueY&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:8,&quot;min&quot;:-200,&quot;max&quot;:200,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Marque&quot;},
-  &quot;txt_signesX&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0,&quot;min&quot;:-400,&quot;max&quot;:400,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Signes (les 3)&quot;},
-  &quot;txt_signesY&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:6,&quot;min&quot;:-200,&quot;max&quot;:200,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Texte Signes (les 3)&quot;},
-  &quot;cercle1X&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:-8,&quot;min&quot;:-120,&quot;max&quot;:120,&quot;step&quot;:1,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cercle 1 (haut)&quot;},
-  &quot;cercle1Y&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:3,&quot;min&quot;:-120,&quot;max&quot;:120,&quot;step&quot;:1,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cercle 1 (haut)&quot;},
-  &quot;cercle2X&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:-9,&quot;min&quot;:-120,&quot;max&quot;:120,&quot;step&quot;:1,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cercle 2 (milieu)&quot;},
-  &quot;cercle2Y&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:-14,&quot;min&quot;:-120,&quot;max&quot;:120,&quot;step&quot;:1,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cercle 2 (milieu)&quot;},
-  &quot;cercle3X&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0,&quot;min&quot;:-120,&quot;max&quot;:120,&quot;step&quot;:1,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cercle 3 (bas)&quot;},
-  &quot;cercle3Y&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:-2,&quot;min&quot;:-120,&quot;max&quot;:120,&quot;step&quot;:1,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cercle 3 (bas)&quot;},
-  &quot;cercleRayon&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:140,&quot;min&quot;:90,&quot;max&quot;:210,&quot;step&quot;:1,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Rayon cercles&quot;}
+  &quot;cercle1X&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:-8,&quot;min&quot;:-400,&quot;max&quot;:400,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cercle 1&quot;},
+  &quot;cercle1Y&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:3,&quot;min&quot;:-400,&quot;max&quot;:400,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cercle 1&quot;},
+  &quot;cercle2X&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:-9,&quot;min&quot;:-400,&quot;max&quot;:400,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cercle 2&quot;},
+  &quot;cercle2Y&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:-14,&quot;min&quot;:-400,&quot;max&quot;:400,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cercle 2&quot;},
+  &quot;cercle3X&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0,&quot;min&quot;:-400,&quot;max&quot;:400,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cercle 3&quot;},
+  &quot;cercle3Y&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:-2,&quot;min&quot;:-400,&quot;max&quot;:400,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cercle 3&quot;},
+  &quot;cercleRayon&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:140,&quot;min&quot;:40,&quot;max&quot;:300,&quot;step&quot;:2,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Cercles&quot;}
 }">
 class Component extends DCLogic {
   state = {
@@ -464,8 +450,9 @@ class Component extends DCLogic {
       fx.putImageData(fim, 0, 0);
       ctx.drawImage(fc, rx, ry);
     }
-    // cercles chevrons opaques par-dessus
-    ctx.save(); ctx.beginPath();
+
+    // cercles chevrons par-dessus : fond blanc réduit + traits seuls (le blanc
+    // au-delà du trait est rendu transparent pour ne pas déborder sur le portrait)
     {
       const p = this.props;
       const offs = [[p.cercle1X ?? -8, p.cercle1Y ?? 3], [p.cercle2X ?? -9, p.cercle2Y ?? -14], [p.cercle3X ?? 0, p.cercle3Y ?? -2]];
@@ -473,11 +460,28 @@ class Component extends DCLogic {
       const r = (p.cercleRayon ?? 140);
       for (let ci = 0; ci < 3; ci++) {
         const ccx = base[ci][0] * W + offs[ci][0], ccy = base[ci][1] * H + offs[ci][1];
-        ctx.moveTo(ccx + r, ccy);
+        // disque blanc opaque, en retrait du trait
+        ctx.save(); ctx.beginPath();
+        ctx.arc(ccx, ccy, r - 14, 0, Math.PI * 2);
+        ctx.fillStyle = '#ffffff'; ctx.fill(); ctx.restore();
+        // traits de la feuille (blanc -> transparent)
+        const sx = Math.max(0, Math.round(ccx - r)), sy = Math.max(0, Math.round(ccy - r));
+        const sw = Math.min(W - sx, r * 2), sh = Math.min(H - sy, r * 2);
+        const tc = document.createElement('canvas'); tc.width = sw; tc.height = sh;
+        const tx = tc.getContext('2d');
+        tx.drawImage(sheet, sx, sy, sw, sh, 0, 0, sw, sh);
+        const tim = tx.getImageData(0, 0, sw, sh), td = tim.data;
+        for (let i = 0; i < td.length; i += 4) {
+          const mx = Math.max(td[i], td[i + 1], td[i + 2]);
+          td[i] = 20; td[i + 1] = 20; td[i + 2] = 20;
+          td[i + 3] = 255 - mx;
+        }
+        tx.putImageData(tim, 0, 0);
+        ctx.save(); ctx.beginPath();
         ctx.arc(ccx, ccy, r, 0, Math.PI * 2);
+        ctx.clip(); ctx.drawImage(tc, sx, sy); ctx.restore();
       }
     }
-    ctx.clip(); ctx.drawImage(sheet, 0, 0); ctx.restore();
 
     // textes : centrés dans leur rectangle dédié
     ctx.fillStyle = '#1e1c18';
@@ -491,6 +495,13 @@ class Component extends DCLogic {
       this.drawZoneText(ctx, text, this.ZONES[key], W, H, p['txt_' + grp + 'X'] ?? TXTDEF[grp][0], p['txt_' + grp + 'Y'] ?? TXTDEF[grp][1]);
     }
     return cv;
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps !== this.props && this.state.previewUrl && !this.state.generating) {
+      clearTimeout(this._tweakT);
+      this._tweakT = setTimeout(() => this.generate(), 250);
+    }
   }
 
   async generate() {
